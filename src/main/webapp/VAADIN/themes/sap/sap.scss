@@ -1,0 +1,25 @@
+@import "../valo/valo.scss";
+
+@mixin sap {
+  @include valo;
+
+  // Insert your own theme rules here
+  .image-grid td {
+    height: 110px;
+    padding: 10px;
+    line-height: 90px;
+    font-size: 24px;
+  }
+  .image-grid td:first-child {
+    text-align: center;
+  }
+  .image-grid td img {
+    max-height: 90px;
+    max-width: 140px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+
+}

@@ -1,0 +1,10 @@
+@import "sap.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in mytheme.scss
+
+.sap {
+    @include addons;
+    @include sap;
+}
